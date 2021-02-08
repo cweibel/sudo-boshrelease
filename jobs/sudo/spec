@@ -1,0 +1,9 @@
+---
+name: sudo
+packages: 
+  - sudo-1.9.5p2
+
+templates:
+  pre-start: bin/pre-start
+
+properties: {}

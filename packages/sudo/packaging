@@ -1,0 +1,27 @@
+#!/bin/bash -exu
+
+function main() {
+
+  extract_archive
+  compile
+
+}
+
+function extract_archive() {
+
+  echo "Extracting archive..."
+  tar xzf sudo/sudo-*
+
+}
+
+function compile() {
+
+  pushd sudo-* > /dev/null
+    ./configure --prefix="${BOSH_INSTALL_TARGET}"
+    #./configure --prefix=/usr
+    make 
+    make install
+  popd > /dev/null
+}
+
+main

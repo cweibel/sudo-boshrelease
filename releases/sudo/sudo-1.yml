@@ -1,0 +1,15 @@
+name: sudo
+version: "1"
+commit_hash: 450c6b1
+uncommitted_changes: false
+jobs:
+- name: sudo
+  version: 895b1cd35826507e91084532f39e5414b3d459a1
+  fingerprint: 895b1cd35826507e91084532f39e5414b3d459a1
+  sha1: 7d3180bcae128be696d6cbf418123940d5296d7a
+packages:
+- name: sudo-1.9.5p2
+  version: 9a6f764838641a799955d2fcf94df9c62ded8031
+  fingerprint: 9a6f764838641a799955d2fcf94df9c62ded8031
+  sha1: df6d6be9cf1328aeb67898ebfc9bd0025b0ca4e4
+  dependencies: []
